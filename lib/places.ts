@@ -103,6 +103,15 @@ export const places: Place[] = [
     country: "China",
   },
   {
+    slug: "meili-snow-mountain",
+    name: "Meili Snow Mountain",
+    coords: [98.91, 28.39],
+    dateLabel: "2024",
+    note: "Prayer flags in the branches — snow peaks behind the clouds.",
+    photo: "/images/places/meili-snow-mountain.jpg",
+    country: "China",
+  },
+  {
     slug: "baihaba",
     name: "Baihaba",
     coords: [86.78, 48.7],
