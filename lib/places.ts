@@ -85,6 +85,15 @@ export const places: Place[] = [
     country: "China",
   },
   {
+    slug: "sayram-lake",
+    name: "Sayram Lake",
+    coords: [81.13, 44.6],
+    dateLabel: "2023",
+    note: "Deep blue water, snow-streaked peaks, and clouds rolling over the pass.",
+    photo: "/images/places/sayram-lake.jpg",
+    country: "China",
+  },
+  {
     slug: "chicago",
     name: "Chicago",
     coords: [-87.63, 41.88],
