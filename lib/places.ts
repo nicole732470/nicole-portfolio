@@ -148,7 +148,7 @@ export const places: Place[] = [
     country: "China",
   },
   {
-    slug: "baihaba",,,
+    slug: "baihaba",
     name: "Baihaba",
     coords: [86.78, 48.7],
     dateLabel: "2023",
@@ -248,7 +248,7 @@ export const places: Place[] = [
     country: "France",
   },
   {
-    slug: "perugia",,,
+    slug: "perugia",
     name: "Perugia",
     coords: [12.39, 43.11],
     dateLabel: "2023",
@@ -335,6 +335,15 @@ export const places: Place[] = [
     note: "Turquoise shallows — a white boat cutting across the blue.",
     photo: "/images/places/semporna.jpg",
     country: "Malaysia",
+  },
+  {
+    slug: "luang-prabang",
+    name: "Luang Prabang",
+    coords: [102.13, 19.89],
+    dateLabel: "2025",
+    note: "White roofs and the Mekong — town, river, and green hills from above.",
+    photo: "/images/places/luang-prabang.jpg",
+    country: "Laos",
   },
 ];
 
