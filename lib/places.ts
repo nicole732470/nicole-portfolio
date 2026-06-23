@@ -85,6 +85,15 @@ export const places: Place[] = [
     country: "China",
   },
   {
+    slug: "dali",
+    name: "Dali",
+    coords: [100.23, 25.59],
+    dateLabel: "2024",
+    note: "A bag full of roses — pink, peach, and yellow on the street.",
+    photo: "/images/places/dali.jpg",
+    country: "China",
+  },
+  {
     slug: "baihaba",
     name: "Baihaba",
     coords: [86.78, 48.7],
