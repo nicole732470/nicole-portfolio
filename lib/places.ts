@@ -130,7 +130,16 @@ export const places: Place[] = [
     country: "China",
   },
   {
-    slug: "baihaba",
+    slug: "wenquan",
+    name: "Wenquan",
+    coords: [81.03, 44.97],
+    dateLabel: "2025",
+    note: "Horses in the snow — golden light on the peaks and bare poplars.",
+    photo: "/images/places/wenquan.jpg",
+    country: "China",
+  },
+  {
+    slug: "baihaba",,
     name: "Baihaba",
     coords: [86.78, 48.7],
     dateLabel: "2023",
