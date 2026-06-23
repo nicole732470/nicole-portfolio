@@ -173,6 +173,15 @@ export const places: Place[] = [
     photo: "/images/places/sydney.jpg",
     country: "Australia",
   },
+  {
+    slug: "hobart",
+    name: "Hobart",
+    coords: [147.33, -42.88],
+    dateLabel: "2023",
+    note: "Hillside houses across the water — boats, pier, and open sky.",
+    photo: "/images/places/hobart.jpg",
+    country: "Australia",
+  },
 ];
 
 export const featuredPlaces = places.filter((p) => p.featured);
