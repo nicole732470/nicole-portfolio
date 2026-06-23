@@ -67,6 +67,15 @@ export const places: Place[] = [
     country: "China",
   },
   {
+    slug: "baihaba",
+    name: "Baihaba",
+    coords: [86.78, 48.7],
+    dateLabel: "2023",
+    note: "Log cabins, snow on the peaks, and cattle at the edge of the village.",
+    photo: "/images/places/baihaba.jpg",
+    country: "China",
+  },
+  {
     slug: "chicago",
     name: "Chicago",
     coords: [-87.63, 41.88],
