@@ -245,6 +245,24 @@ export const places: Place[] = [
     photo: "/images/places/melbourne.jpg",
     country: "Australia",
   },
+  {
+    slug: "kota-kinabalu",
+    name: "Kota Kinabalu",
+    coords: [116.07, 5.98],
+    dateLabel: "2024",
+    note: "Sunset over the water — orange sky, dark horizon, light on the waves.",
+    photo: "/images/places/kota-kinabalu.jpg",
+    country: "Malaysia",
+  },
+  {
+    slug: "semporna",
+    name: "Semporna",
+    coords: [118.61, 4.48],
+    dateLabel: "2024",
+    note: "Turquoise shallows — a white boat cutting across the blue.",
+    photo: "/images/places/semporna.jpg",
+    country: "Malaysia",
+  },
 ];
 
 export const featuredPlaces = places.filter((p) => p.featured);
