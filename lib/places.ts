@@ -121,6 +121,15 @@ export const places: Place[] = [
     country: "Spain",
   },
   {
+    slug: "perugia",
+    name: "Perugia",
+    coords: [12.39, 43.11],
+    dateLabel: "2023",
+    note: "Terracotta roofs, green hills, and a view from the old town wall.",
+    photo: "/images/places/perugia.jpg",
+    country: "Italy",
+  },
+  {
     slug: "sydney",
     name: "Sydney",
     coords: [151.21, -33.87],
