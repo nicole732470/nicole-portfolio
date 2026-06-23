@@ -167,6 +167,15 @@ export const places: Place[] = [
     country: "United States of America",
   },
   {
+    slug: "san-francisco",
+    name: "San Francisco",
+    coords: [-122.48, 37.82],
+    dateLabel: "2024",
+    note: "Golden Gate at dusk — orange sky, rocks, and people watching the view.",
+    photo: "/images/places/san-francisco.jpg",
+    country: "United States of America",
+  },
+  {
     slug: "seville",
     name: "Seville",
     coords: [-5.98, 37.39],
