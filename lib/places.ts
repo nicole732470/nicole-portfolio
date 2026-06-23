@@ -112,6 +112,15 @@ export const places: Place[] = [
     country: "China",
   },
   {
+    slug: "xishuangbanna",
+    name: "Xishuangbanna",
+    coords: [100.8, 22.01],
+    dateLabel: "2024",
+    note: "Palm trees on the street — scooters, shops, and pink evening sky.",
+    photo: "/images/places/xishuangbanna.jpg",
+    country: "China",
+  },
+  {
     slug: "baihaba",
     name: "Baihaba",
     coords: [86.78, 48.7],
