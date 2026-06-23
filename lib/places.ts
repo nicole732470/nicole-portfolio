@@ -41,6 +41,15 @@ export const places: Place[] = [
     featured: true,
   },
   {
+    slug: "san-diego",
+    name: "San Diego",
+    coords: [-117.16, 32.72],
+    dateLabel: "2024",
+    note: "Tacos El Gordo through the window — adobada, neon, and Halloween stickers.",
+    photo: "/images/places/san-diego.jpg",
+    country: "United States of America",
+  },
+  {
     slug: "beijing",
     name: "Beijing",
     coords: [116.4, 39.9],
