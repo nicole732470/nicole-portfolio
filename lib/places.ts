@@ -176,6 +176,15 @@ export const places: Place[] = [
     country: "United States of America",
   },
   {
+    slug: "seattle",
+    name: "Seattle",
+    coords: [-122.33, 47.61],
+    dateLabel: "2024",
+    note: "Mount Rainier from the trail — snow peak, meadow, and a log bridge.",
+    photo: "/images/places/seattle.jpg",
+    country: "United States of America",
+  },
+  {
     slug: "seville",
     name: "Seville",
     coords: [-5.98, 37.39],
