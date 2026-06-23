@@ -103,16 +103,20 @@ export default function Home() {
         <section id="playground" className="page-section border-b border-line/50 p-6 sm:p-8 lg:p-10">
           <SectionHeading>Playground</SectionHeading>
 
-          <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-start">
-            <article>
+          <p className="mt-2 max-w-2xl text-sm text-muted">
+            Travel footprints on the map — every pin cycles with its photo.
+          </p>
+
+          <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-stretch">
+            <article className="flex min-h-0 flex-col">
               <h3 className="font-hand text-2xl font-bold text-navy">Places on the map</h3>
-              <div className="mt-3">
+              <div className="mt-3 flex min-h-[520px] flex-1 flex-col">
                 <MemoryMapLazy />
               </div>
             </article>
-            <article>
+            <article className="flex flex-col">
               <h3 className="font-hand text-2xl font-bold text-navy">Recently watched</h3>
-              <div className="mt-3">
+              <div className="mt-3 min-h-[520px] rounded-xl border border-line/70 bg-paper/50 p-4 sm:p-5">
                 <MovieShelf />
               </div>
               <MovieHeatmap />

@@ -8,9 +8,9 @@ import {
   Marker,
 } from "react-simple-maps";
 import { CitySpotlight } from "@/components/CitySpotlight";
-import { featuredPlaces, GEO_URL, places, visitedCountries } from "@/lib/places";
+import { GEO_URL, places, visitedCountries } from "@/lib/places";
 
-const AUTO_MS = 2800;
+const AUTO_MS = 2600;
 
 function countryFill(name: string, activeCountry: string | null) {
   if (activeCountry === name) return "rgba(201, 95, 61, 0.38)";
@@ -22,30 +22,30 @@ export function MemoryMap() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 
-  const activePlace = featuredPlaces[activeIndex];
+  const activePlace = places[activeIndex];
   const activeCountry = activePlace?.country ?? null;
 
   useEffect(() => {
-    if (paused || featuredPlaces.length === 0) return;
+    if (paused || places.length === 0) return;
     const id = window.setInterval(() => {
-      setActiveIndex((i) => (i + 1) % featuredPlaces.length);
+      setActiveIndex((i) => (i + 1) % places.length);
     }, AUTO_MS);
     return () => window.clearInterval(id);
   }, [paused]);
 
   return (
     <div
-      className="w-full"
+      className="flex h-full flex-col"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       aria-label="World map with visited cities"
     >
-      <div className="relative w-full overflow-hidden rounded-xl border border-line/70 bg-cream">
+      <div className="relative flex-1 overflow-hidden rounded-t-xl border border-b-0 border-line/70 bg-cream">
         <ComposableMap
           projection="geoEqualEarth"
-          projectionConfig={{ scale: 175, center: [12, 8] }}
+          projectionConfig={{ scale: 210, center: [12, 6] }}
           width={1100}
-          height={500}
+          height={580}
           style={{ width: "100%", height: "auto", display: "block" }}
         >
           <Geographies geography={GEO_URL}>
@@ -72,23 +72,33 @@ export function MemoryMap() {
             }
           </Geographies>
 
-          {places.map((place) => {
-            const featuredIndex = featuredPlaces.findIndex((p) => p.name === place.name);
-            const isActive = featuredIndex === activeIndex;
-            const isFeatured = featuredIndex >= 0;
+          {places.map((place, placeIndex) => {
+            const isActive = placeIndex === activeIndex;
             return (
-              <Marker key={place.name} coordinates={place.coords}>
-                <g role="presentation">
+              <Marker key={place.slug} coordinates={place.coords}>
+                <g
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`${place.name}${place.dateLabel ? `, ${place.dateLabel}` : ""}`}
+                  style={{ cursor: "pointer" }}
+                  onClick={() => setActiveIndex(placeIndex)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      setActiveIndex(placeIndex);
+                    }
+                  }}
+                >
                   {isActive && (
-                    <circle r={16} fill="rgba(201, 95, 61, 0.2)">
-                      <animate attributeName="r" values="12;18;12" dur="1.4s" repeatCount="indefinite" />
+                    <circle r={18} fill="rgba(201, 95, 61, 0.2)">
+                      <animate attributeName="r" values="14;20;14" dur="1.4s" repeatCount="indefinite" />
                       <animate attributeName="opacity" values="0.45;0.15;0.45" dur="1.4s" repeatCount="indefinite" />
                     </circle>
                   )}
                   <circle
-                    r={isActive ? 8 : isFeatured ? 5.5 : 4}
+                    r={isActive ? 7.5 : 5}
                     fill="#c95f3d"
-                    fillOpacity={isActive ? 1 : isFeatured ? 0.75 : 0.45}
+                    fillOpacity={isActive ? 1 : 0.65}
                     stroke="#fbf5ea"
                     strokeWidth={isActive ? 2.5 : 1.5}
                   />
@@ -97,9 +107,13 @@ export function MemoryMap() {
             );
           })}
         </ComposableMap>
-
-        {activePlace ? <CitySpotlight key={activePlace.slug} place={activePlace} /> : null}
       </div>
+
+      {activePlace ? (
+        <div className="rounded-b-xl border border-t-0 border-line/70">
+          <CitySpotlight key={activePlace.slug} place={activePlace} index={activeIndex} total={places.length} />
+        </div>
+      ) : null}
     </div>
   );
 }
