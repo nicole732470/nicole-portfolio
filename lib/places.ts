@@ -94,6 +94,15 @@ export const places: Place[] = [
     country: "China",
   },
   {
+    slug: "shangri-la",
+    name: "Shangri-La",
+    coords: [99.71, 27.83],
+    dateLabel: "2024",
+    note: "Songzanlin on the hill — gold roofs above the lake.",
+    photo: "/images/places/shangri-la.jpg",
+    country: "China",
+  },
+  {
     slug: "baihaba",
     name: "Baihaba",
     coords: [86.78, 48.7],
