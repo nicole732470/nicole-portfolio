@@ -35,12 +35,12 @@ export function MemoryMap() {
 
   return (
     <div
-      className="flex h-full flex-col"
+      className="flex flex-col"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       aria-label="World map with visited cities"
     >
-      <div className="relative flex-1 overflow-hidden rounded-t-xl border border-b-0 border-line/70 bg-cream">
+      <div className="relative overflow-hidden rounded-t-xl border border-b-0 border-line/70 bg-cream">
         <ComposableMap
           projection="geoEqualEarth"
           projectionConfig={{ scale: 210, center: [12, 6] }}
@@ -111,7 +111,7 @@ export function MemoryMap() {
 
       {activePlace ? (
         <div className="rounded-b-xl border border-t-0 border-line/70">
-          <CitySpotlight key={activePlace.slug} place={activePlace} index={activeIndex} total={places.length} />
+          <CitySpotlight key={activePlace.slug} place={activePlace} />
         </div>
       ) : null}
     </div>

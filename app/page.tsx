@@ -14,7 +14,7 @@ import { focus, nav, numbers, profile, projects, quote, socials, whyIBuild } fro
 
 export default function Home() {
   return (
-    <main className="relative mx-auto flex min-h-screen w-full max-w-[1720px] bg-cream lg:flex-row">
+    <main className="relative mx-auto flex min-h-screen w-full max-w-[1720px] flex-col bg-cream lg:flex-row">
       <Sidebar nav={nav} socials={socials} />
 
       <div className="flex-1 bg-cream">
@@ -107,16 +107,16 @@ export default function Home() {
             Travel footprints on the map — every pin cycles with its photo.
           </p>
 
-          <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-stretch">
-            <article className="flex min-h-0 flex-col">
+          <div className="mt-8 grid gap-8 lg:grid-cols-2 lg:items-start">
+            <article className="min-w-0">
               <h3 className="font-hand text-2xl font-bold text-navy">Places on the map</h3>
-              <div className="mt-3 flex min-h-[520px] flex-1 flex-col">
+              <div className="mt-3">
                 <MemoryMapLazy />
               </div>
             </article>
-            <article className="flex flex-col">
+            <article className="min-w-0">
               <h3 className="font-hand text-2xl font-bold text-navy">Recently watched</h3>
-              <div className="mt-3 min-h-[520px] rounded-xl border border-line/70 bg-paper/50 p-4 sm:p-5">
+              <div className="mt-3 rounded-xl border border-line/70 bg-paper/50 p-4 sm:p-5">
                 <MovieShelf />
               </div>
               <MovieHeatmap />

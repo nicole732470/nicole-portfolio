@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, Caveat } from "next/font/google";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const serif = Cormorant_Garamond({ subsets: ["latin"], variable: "--font-serif", weight: ["500", "600", "700"] });
@@ -7,6 +8,7 @@ const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const hand = Caveat({ subsets: ["latin"], variable: "--font-hand", weight: ["500", "600", "700"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl()),
   title: "Nicole Li — Engineering × Product",
   description:
     "Nicole Li (Yu Li) is a product-minded engineer in Chicago building JobLens, JobPush, and PriceTracker. Former Tencent Product Manager and Northwestern graduate student.",

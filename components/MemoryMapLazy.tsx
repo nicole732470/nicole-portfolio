@@ -7,7 +7,7 @@ export const MemoryMapLazy = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="flex h-[min(420px,50vh)] w-full animate-pulse items-center justify-center rounded-xl border border-line/70 bg-paper text-sm text-muted">
+      <div className="flex aspect-[1100/580] w-full animate-pulse items-center justify-center rounded-xl border border-line/70 bg-paper text-sm text-muted">
         Loading map…
       </div>
     ),

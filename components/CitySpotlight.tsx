@@ -12,11 +12,9 @@ function countryLabel(country: string) {
 
 type CitySpotlightProps = {
   place: Place;
-  index: number;
-  total: number;
 };
 
-export function CitySpotlight({ place, index, total }: CitySpotlightProps) {
+export function CitySpotlight({ place }: CitySpotlightProps) {
   const [photoOk, setPhotoOk] = useState(true);
   const src = placePhotoSrc(place);
 
@@ -32,7 +30,7 @@ export function CitySpotlight({ place, index, total }: CitySpotlightProps) {
         ) : null}
       </div>
 
-      <div className="mx-auto mt-3 w-full max-w-[280px]">
+      <div className="mx-auto mt-3 w-full max-w-[420px]">
         <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-line/60 bg-cream shadow-sm">
           {photoOk ? (
             <Image
@@ -40,7 +38,7 @@ export function CitySpotlight({ place, index, total }: CitySpotlightProps) {
               alt={place.name}
               fill
               className="object-cover"
-              sizes="280px"
+              sizes="(min-width: 1024px) 420px, 90vw"
               onError={() => setPhotoOk(false)}
             />
           ) : (
@@ -54,21 +52,6 @@ export function CitySpotlight({ place, index, total }: CitySpotlightProps) {
         </div>
       </div>
 
-      <div className="mt-4 px-1" aria-hidden>
-        <div className="flex gap-0.5">
-          {Array.from({ length: total }).map((_, i) => (
-            <div
-              key={i}
-              className={`h-1 min-w-0 flex-1 rounded-full transition-colors duration-300 ${
-                i === index ? "bg-coral" : i < index ? "bg-coral/30" : "bg-line"
-              }`}
-            />
-          ))}
-        </div>
-        <p className="mt-2 text-center text-[11px] tabular-nums text-muted">
-          {index + 1} of {total}
-        </p>
-      </div>
     </div>
   );
 }
