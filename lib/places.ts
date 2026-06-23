@@ -182,6 +182,15 @@ export const places: Place[] = [
     photo: "/images/places/hobart.jpg",
     country: "Australia",
   },
+  {
+    slug: "launceston",
+    name: "Launceston",
+    coords: [147.14, -41.43],
+    dateLabel: "2024",
+    note: "Shell station at dusk — pink clouds over an ordinary corner of town.",
+    photo: "/images/places/launceston.jpg",
+    country: "Australia",
+  },
 ];
 
 export const featuredPlaces = places.filter((p) => p.featured);
