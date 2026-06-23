@@ -35,6 +35,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className={`${serif.variable} ${sans.variable} ${hand.variable} font-sans text-ink antialiased`}>
         <div className="noise" />
         {children}
+        <Analytics />
       </body>
     </html>
   );
