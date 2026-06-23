@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 480">
+<rect width="320" height="480" rx="24" fill="#e7b56b"/>
+<circle cx="248" cy="82" r="112" fill="#d66f4d" opacity=".56"/>
+<circle cx="66" cy="395" r="72" fill="#fffaf2" opacity=".16"/>
+<text x="34" y="130" font-family="Georgia" font-size="42" font-weight="700" fill="#fffaf2">Robot</text><text x="34" y="180" font-family="Georgia" font-size="42" font-weight="700" fill="#fffaf2">Dreams</text>
+<text x="34" y="350" font-family="Inter,Arial" font-size="23" fill="#fffaf2" opacity=".85">机器人之梦</text>
+<path d="M34 378 H255" stroke="#fffaf2" stroke-width="3" opacity=".45"/>
+<text x="34" y="420" font-family="Inter,Arial" font-size="18" fill="#fffaf2">recently watched</text>
+</svg>

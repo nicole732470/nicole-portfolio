@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --background: #fbf5ea; --foreground: #111827; }
+html { scroll-behavior: smooth; scroll-snap-type: y proximity; }
+body { color: var(--foreground); background: #fbf5ea; }
+.page-section { scroll-snap-align: start; scroll-margin-top: 5rem; }
+::selection { background: rgba(201, 95, 61, 0.2); }
+
+.noise {
+  position: fixed; inset: 0; pointer-events: none; opacity: .14;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 260 260' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
+}
+
+.section-title::before {
+  content: ""; width: .58rem; height: .58rem; display: inline-block; border-radius: 999px;
+  background: #c95f3d; margin-right: .75rem; transform: translateY(-.12rem);
+}
+
+.card-hover { transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease; }
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(36, 28, 18, 0.11);
+  border-color: rgba(201, 95, 61, .32);
+}
+
+.paper-tape:before {
+  content: ""; position: absolute; width: 70px; height: 22px; background: rgba(231, 207, 173, .82);
+  transform: rotate(-8deg); top: -10px; left: 32px; border-radius: 3px;
+}
+
+/* Hero — transparent PNG sits on cream page */
+.hero-illustration {
+  background: #fbf5ea;
+}
+
+.thinking-card .thinking-quote {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease, opacity 0.25s ease, margin 0.25s ease, padding 0.25s ease;
+}
+.thinking-card:hover .thinking-quote,
+.thinking-card:focus-within .thinking-quote {
+  max-height: 6rem;
+  opacity: 1;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(232, 220, 201, 0.8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card-hover { transition: none; }
+  .card-hover:hover { transform: none; }
+  .thinking-card .thinking-quote { max-height: none; opacity: 1; }
+}

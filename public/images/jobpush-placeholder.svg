@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560">
+<rect width="900" height="560" rx="32" fill="#fffaf2"/>
+<rect x="55" y="55" width="790" height="450" rx="28" fill="#fbf5ea" stroke="#e8dcc9" stroke-width="3"/>
+<text x="90" y="120" font-family="Georgia" font-size="48" font-weight="700" fill="#101832">JobPush</text>
+<text x="90" y="160" font-family="Inter,Arial" font-size="22" fill="#6f675f">Official career-site monitoring</text>
+<rect x="90" y="205" width="330" height="52" rx="16" fill="#ffffff" stroke="#e8dcc9"/>
+<rect x="90" y="280" width="470" height="52" rx="16" fill="#ffffff" stroke="#e8dcc9"/>
+<rect x="90" y="355" width="420" height="52" rx="16" fill="#ffffff" stroke="#e8dcc9"/>
+<circle cx="720" cy="250" r="82" fill="#e17857" opacity=".18"/>
+<path d="M650 262 L750 205 L728 330 Z" fill="#c95f3d" opacity=".88"/>
+<path d="M90 445 H780" stroke="#c95f3d" stroke-width="3" stroke-dasharray="9 12" opacity=".45"/>
+<circle cx="170" cy="445" r="10" fill="#c95f3d"/><circle cx="360" cy="445" r="10" fill="#c95f3d"/><circle cx="610" cy="445" r="10" fill="#c95f3d"/>
+<text x="115" y="238" font-family="Inter,Arial" font-size="21" fill="#6f675f">Company career pages</text>
+<text x="115" y="313" font-family="Inter,Arial" font-size="21" fill="#6f675f">Fresh posting monitor</text>
+<text x="115" y="388" font-family="Inter,Arial" font-size="21" fill="#6f675f">Priority queue</text>
+</svg>
