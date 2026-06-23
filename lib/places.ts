@@ -191,6 +191,15 @@ export const places: Place[] = [
     photo: "/images/places/launceston.jpg",
     country: "Australia",
   },
+  {
+    slug: "melbourne",
+    name: "Melbourne",
+    coords: [144.96, -37.81],
+    dateLabel: "2024",
+    note: "Red walls at the NGV — gold frames floor to ceiling.",
+    photo: "/images/places/melbourne.jpg",
+    country: "Australia",
+  },
 ];
 
 export const featuredPlaces = places.filter((p) => p.featured);
