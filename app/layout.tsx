@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, Caveat } from "next/font/google";
 import { siteUrl } from "@/lib/site";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
+
 
 const serif = Cormorant_Garamond({ subsets: ["latin"], variable: "--font-serif", weight: ["500", "600", "700"] });
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
