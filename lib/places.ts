@@ -148,6 +148,15 @@ export const places: Place[] = [
     country: "Italy",
   },
   {
+    slug: "venice",
+    name: "Venice",
+    coords: [12.34, 45.44],
+    dateLabel: "2023",
+    note: "Gondola at dusk — warm balcony light on the canal.",
+    photo: "/images/places/venice.jpg",
+    country: "Italy",
+  },
+  {
     slug: "sydney",
     name: "Sydney",
     coords: [151.21, -33.87],
