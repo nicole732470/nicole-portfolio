@@ -211,7 +211,16 @@ export const places: Place[] = [
     country: "Spain",
   },
   {
-    slug: "perugia",
+    slug: "barcelona",
+    name: "Barcelona",
+    coords: [2.17, 41.39],
+    dateLabel: "2025",
+    note: "Sagrada Família at golden hour — city, sea, and pine branches.",
+    photo: "/images/places/barcelona.jpg",
+    country: "Spain",
+  },
+  {
+    slug: "perugia",,
     name: "Perugia",
     coords: [12.39, 43.11],
     dateLabel: "2023",
