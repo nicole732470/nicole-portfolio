@@ -59,6 +59,15 @@ export const places: Place[] = [
     featured: true,
   },
   {
+    slug: "new-york",
+    name: "New York",
+    coords: [-73.98, 40.75],
+    dateLabel: "2019",
+    note: "Grand Central light — marble arches and a first taste of the city.",
+    photo: "/images/places/new-york.jpg",
+    country: "United States of America",
+  },
+  {
     slug: "seville",
     name: "Seville",
     coords: [-5.98, 37.39],
