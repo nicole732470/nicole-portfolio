@@ -221,7 +221,16 @@ export const places: Place[] = [
     country: "Spain",
   },
   {
-    slug: "perugia",,
+    slug: "granada",
+    name: "Granada",
+    coords: [-3.6, 37.18],
+    dateLabel: "2025",
+    note: "Court of the Lions at the Alhambra — marble columns and carved arches.",
+    photo: "/images/places/granada.jpg",
+    country: "Spain",
+  },
+  {
+    slug: "perugia",,,
     name: "Perugia",
     coords: [12.39, 43.11],
     dateLabel: "2023",
