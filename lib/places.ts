@@ -49,6 +49,15 @@ export const places: Place[] = [
     featured: true,
   },
   {
+    slug: "sanya",
+    name: "Sanya",
+    coords: [109.51, 18.25],
+    dateLabel: "2022",
+    note: "Turquoise water, fishing boats, and mountains behind the skyline.",
+    photo: "/images/places/sanya.jpg",
+    country: "China",
+  },
+  {
     slug: "chicago",
     name: "Chicago",
     coords: [-87.63, 41.88],
