@@ -230,6 +230,15 @@ export const places: Place[] = [
     country: "Spain",
   },
   {
+    slug: "collioure",
+    name: "Collioure",
+    coords: [3.08, 42.53],
+    dateLabel: "2025",
+    note: "Peach and yellow walls — Catalan flag, iron balconies, and sun on the alley.",
+    photo: "/images/places/collioure.jpg",
+    country: "France",
+  },
+  {
     slug: "perugia",,,
     name: "Perugia",
     coords: [12.39, 43.11],
