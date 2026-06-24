@@ -23,7 +23,7 @@ export const placeStages: JourneyStage[] = [
     kind: "place",
     label: "Los Angeles",
     title: "Study at UCLA",
-    story: "Good Korean food.",
+    story: "Good Korean food. Sunset Boulevard",
     emoji: "🌴",
     accent: "from-[#f5d4a8] to-[#e8a060]",
   },
