@@ -34,7 +34,7 @@ function syntheticActivity(weeks: number): ActivityDay[] {
   const end = new Date("2026-06-23");
   const start = new Date(end);
   start.setDate(start.getDate() - weeks * 7);
-  const days: WatchDay[] = [];
+  const days: ActivityDay[] = [];
   const cursor = new Date(start);
 
   while (cursor <= end) {
