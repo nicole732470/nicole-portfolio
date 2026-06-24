@@ -345,6 +345,235 @@ export const places: Place[] = [
     photo: "/images/places/luang-prabang.jpg",
     country: "Laos",
   },
+
+  {
+    slug: "chiang-mai",
+    name: "Chiang Mai",
+    coords: [100.5, 18.78],
+    dateLabel: "2025",
+    note: "sunset on the mountain",
+    photo: "/images/places/chiang-mai.jpg",
+    country: "Thailand",
+  },
+
+  {
+    slug: "iceland",
+    name: "Iceland",
+    coords: [-19.02, 64.13],
+    dateLabel: "2025",
+    note: "iceberg",
+    photo: "/images/places/iceland.jpg",
+    country: "Iceland",
+  },
+
+  {
+    slug: "grand-canyon",
+    name: "Grand Canyon",
+    coords: [-112.14, 36.06],
+    dateLabel: "2025",
+    note: "squarrel",
+    photo: "/images/places/grand-canyon.jpg",
+    country: "United States of America",
+  },
+
+  {
+    slug: "dubai",
+    name: "Dubai",
+    coords: [55.3, 25.2],
+    dateLabel: "2025",
+    note: "desert dunes",
+    photo: "/images/places/dubai.jpg",
+    country: "United Arab Emirates",
+  },
+
+  {
+    slug: "okinawa",
+    name: "Okinawa",
+    coords: [127.8, 26.6],
+    dateLabel: "2025",
+    note: "sunset at American Village",
+    photo: "/images/places/okinawa.jpg",
+    country: "Japan",
+  },
+  {
+    slug: "arizona",
+    name: "Arizona",
+    coords: [-111.09, 34.57],
+    dateLabel: "2025",
+    note: "road trip",
+    photo: "/images/places/arizona.jpg",
+    country: "United States of America",
+  },
+
+  {
+    slug: "page",
+    name: "Page",
+    coords: [-111.5, 36.91],
+    dateLabel: "2025",
+    note: "road trip",
+    photo: "/images/places/page.jpg",
+    country: "United States of America",
+  },
+
+  {
+    slug: "bryce-canyon",
+    name: "Bryce Canyon",
+    coords: [-112.9, 37.7],
+    dateLabel: "2025",
+    note: "snow and canyon",
+    photo: "/images/places/bryce-canyon.jpg",
+    country: "United States of America",
+  },
+
+  {
+    slug: "las-vegas",
+    name: "Las Vegas",
+    coords: [-115.14, 36.17],
+    dateLabel: "2025",
+    note: "city sunsets",
+    photo: "/images/places/las-vegas.jpg",
+    country: "United States of America",
+  },
+
+  {
+    slug: "yosemite",
+    name: "Yosemite",
+    coords: [-119.5, 37.8],
+    dateLabel: "2025",
+    note: "mountain views",
+    photo: "/images/places/yosemite.jpg",
+    country: "United States of America",
+  },
+
+  {
+    slug: "casablanca",
+    name: "Casablanca",
+    coords: [-11.69, 33.5],
+    dateLabel: "2025",
+    note: "coastal views",
+    photo: "/images/places/casablanca.jpg",
+    country: "Morocco",
+  },
+
+  {
+    slug: "nanchang",
+    name: "Nanchang",
+    coords: [115.89, 28.67],
+    dateLabel: "2021",
+    note: "Tengwangg Tower",
+    photo: "/images/places/nanchang.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "lushan",
+    name: "Lushan",
+    coords: [115.98, 29.57],
+    dateLabel: "2021",
+    note: "Waterfall",
+    photo: "/images/places/lushan.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "wuhan",
+    name: "Wuhan",
+    coords: [114.3, 30.58],
+    dateLabel: "2021",
+    note: "ferry",
+    photo: "/images/places/wuhan.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "changsha",
+    name: "Changsha",
+    coords: [113.26, 28.19],
+    dateLabel: "2021",
+    note: "temple",
+    photo: "/images/places/changsha.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "guilin",
+    name: "Guilin",
+    coords: [110.29, 25.28],
+    dateLabel: "2021",
+    note: "mountain farm",
+    photo: "/images/places/guilin.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "leshan",
+    name: "Leshan",
+    coords: [103.4, 29.9],
+    dateLabel: "2021",
+    note: "flowers",
+    photo: "/images/places/leshan.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "tianjin",
+    name: "Tianjin",
+    coords: [117.19, 39.12],
+    dateLabel: "2019",
+    note: "words",
+    photo: "/images/places/tianjin.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "shanghai",
+    name: "Shanghai",
+    coords: [121.47, 31.23],
+    dateLabel: "2021",
+    note: "tower and street",
+    photo: "/images/places/shanghai.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "yangzhou",
+    name: "Yangzhou",
+    coords: [119.14, 32.4],
+    dateLabel: "2017",
+    note: "patio",
+    photo: "/images/places/yangzhou.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "jiaxing",
+    name: "Jiaxing",
+    coords: [120.73, 30.75],
+    dateLabel: "2025",
+    note: "clouds",
+    photo: "/images/places/jiaxing.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "beijing",
+    name: "Beijing",
+    coords: [116.4, 39.9],
+    dateLabel: "2023",
+    note: "another home",
+    photo: "/images/places/beijing.jpg",
+    country: "China",
+  },
+
+  {
+    slug: "hohhot",
+    name: "Hohhot",
+    coords: [111.66, 40.82],
+    dateLabel: "2023",
+    note: "another home",
+    photo: "/images/places/hohhot.jpg",
+    country: "China",
+  },
 ];
 
 export const featuredPlaces = places.filter((p) => p.featured);
