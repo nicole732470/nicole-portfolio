@@ -33,6 +33,7 @@ export default function Home() {
             <div className="mt-3 grid gap-1 text-sm">
               <span>✨ {profile.school} · {profile.location}</span>
               <span>✨ {profile.previous}</span>
+              <span>✨ {profile.hobby}</span>
             </div>
             <div className="mt-5">
               <a href="#work" className="inline-flex items-center rounded-xl bg-coral px-5 py-2.5 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5">
