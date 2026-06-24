@@ -61,12 +61,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <aside className="flex items-center justify-center border-t border-line p-8 lg:border-l lg:border-t-0">
-            <div className="paper-tape relative rotate-[-3deg] rounded-sm border border-line bg-[#fff1d8] p-8 shadow-card">
-              <p className="font-serif text-2xl leading-9 text-navy">{quote}</p>
-              <p className="mt-4 font-hand text-3xl text-coral" aria-hidden>♡</p>
-            </div>
-          </aside>
         </section>
 
         <section id="journey" className="page-section border-b border-line/50 p-6 sm:p-8 lg:p-10">
