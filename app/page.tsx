@@ -34,7 +34,6 @@ export default function Home() {
               <span>✨ {profile.school}</span>
               <span>✨ {profile.location}</span> 
               <span>✨ {profile.hobby}</span>
-              <span>✨ {profile.previous}</span>
               <span>✨ {profile.now}</span>
             </div>
             <div className="mt-5">

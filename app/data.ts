@@ -4,7 +4,7 @@ export const profile = {
   subheadline:
     "We live in an age of chaos. I build products to navigate the complexity, uncertainty, and noise of information overload, so people can make better decisions.",
   location: "Chicago, IL",
-  school: "Northwestern University, M.S. in Information Systems",
+  school: "Northwestern University",
   hobby: "World Traveler 🌏",
   previous: "Former Tencent Product Manager",
   now: "Product Engineer",

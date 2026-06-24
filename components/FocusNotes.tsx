@@ -41,8 +41,6 @@ export function FocusNotes({
           );
         })}
       </div>
-
-      <p className="mt-2 text-sm leading-6 text-muted">Always learning. Always building.</p>
     </div>
   );
 }
