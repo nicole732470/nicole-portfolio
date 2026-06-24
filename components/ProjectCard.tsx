@@ -42,12 +42,12 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       </div>
 
       <div className="mt-5 overflow-hidden rounded-2xl border border-line bg-cream p-2 shadow-[inset_0_1px_0_rgba(255,255,255,.6)]">
-        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-[#f0ebe3]">
+        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-[#f0ebe3] flex items-center justify-center">
           <Image
             src={project.image}
             alt={`${project.title} product screenshot`}
             fill
-            className="object-cover object-top"
+            className="object-contain object-center"
             sizes="(max-width: 1280px) 100vw, 33vw"
             unoptimized={project.image.endsWith(".svg")}
           />
