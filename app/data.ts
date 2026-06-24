@@ -2,7 +2,7 @@ export const profile = {
   name: "Nicole Li",
   headline: "Curiosity-driven",
   subheadline:
-    "We live in an age of chaos. I build products to navigate the complexity, uncertainty, and noise of information overload, so people can make better decisions.",
+    "We live in an age of chaos. I build products to navigate the complexity and uncertainty.",
   location: "Chicago, IL",
   school: "Northwestern University",
   hobby: "World Traveler 🌏",
@@ -27,7 +27,7 @@ export const nav = [
 export const focus = [
   { title: "System Thinking", text: "Approaching problems through end-to-end systems.", iconKey: "briefcase" as const },
   { title: "Data Intelligence", text: "Using data, evaluation, and evidence to find structure in chaos.", iconKey: "sparkles" as const },
-  { title: "Engineering Driven", text: "Building products with simple, maintainable solutions.", iconKey: "filter" as const },
+  { title: "Engineering-oriented", text: "Building products with simple, maintainable solutions.", iconKey: "filter" as const },
 ];
 
 export const whyIBuild = [
