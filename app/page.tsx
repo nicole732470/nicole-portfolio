@@ -11,7 +11,7 @@ import { ReadingHeatmap } from "@/components/ReadingHeatmap";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Sidebar } from "@/components/Sidebar";
 import { ThinkingNotes } from "@/components/ThinkingNotes";
-import { focus, nav, numbers, profile, projects, quote, socials, whyIBuild } from "./data";
+import { focus, nav, numbers, profile, projects, socials, whyIBuild } from "./data";
 
 export default function Home() {
   return (

@@ -276,14 +276,6 @@ export const places: Place[] = [
     country: "Italy",
   },
   {
-    slug: "sydney",
-    name: "Sydney",
-    coords: [151.21, -33.87],
-    note: "Rainforest trails and a different sense of distance.",
-    photo: "/images/places/sydney.jpg",
-    country: "Australia",
-  },
-  {
     slug: "hobart",
     name: "Hobart",
     coords: [147.33, -42.88],

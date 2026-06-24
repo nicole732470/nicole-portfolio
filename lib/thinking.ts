@@ -7,33 +7,33 @@ export type ThinkingCard = {
 
 export const thinkingCards: ThinkingCard[] = [
   {
-    title: "Career Intelligence",
-    text: "Can job search become a data problem instead of a volume problem?",
-    quote: "The best applications are not the most — they are the most informed.",
+    title: "Agile Development",
+    text: "Base version first, then debug with real users. Build small, ship often, and iterate.",
+    quote: "Running in small steps.",
     color: "bg-[#fff8e8]",
   },
   {
     title: "AI Evaluation",
-    text: "Why evaluation matters more than demos.",
-    quote: "A demo proves possibility. Evaluation proves trust.",
+    text: "Break complex problems into measurable dimensions, define clear metrics, and use evidence to guide continuous improvement.",
+    quote: "Turn intuition into evidence.Complex problems become manageable when they can be measured.",
     color: "bg-[#eef4f8]",
   },
   {
-    title: "Information Systems",
-    text: "People rarely need more information. They need better filters.",
-    quote: "Clarity is a product feature, not a side effect.",
+    title: "Automation First",
+    text: "If a task repeats often enough, it deserves a system.",
+    quote: "Automate the boring parts.",
     color: "bg-[#eef6ee]",
   },
   {
-    title: "Human Decision Making",
-    text: "How software can reduce uncertainty without pretending the world is simple.",
-    quote: "Good tools respect how messy real decisions actually are.",
+    title: "AI as an Enabler",
+    text: "AI changes what is possible, but not what matters. Great products still start with real user needs, clear evaluation, and thoughtful execution.",
+    quote: "New technology doesn't replace product thinking.",
     color: "bg-[#fdf0ea]",
   },
   {
-    title: "Building in Public",
-    text: "What changes when you ship small tools before the perfect plan exists.",
-    quote: "Momentum comes from making the problem visible, not hiding in research.",
+    title: "User Empathy",
+    text: "Understanding frustrations, motivations, and constraints leads to useful products.",
+    quote: "People don't want features. They want outcomes.",
     color: "bg-[#f5eef8]",
   },
 ];

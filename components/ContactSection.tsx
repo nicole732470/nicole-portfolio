@@ -22,7 +22,7 @@ export function ContactSection({ profile }: { profile: Profile }) {
               <span className="italic text-lake">favorite film</span>.
             </h2>
             <p className="mt-5 max-w-lg text-base leading-7 text-muted">
-              I read everything. I reply slowly but warmly. Best way to reach me is still a real email.
+              Let's meet!
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -88,7 +88,7 @@ export function ContactSection({ profile }: { profile: Profile }) {
 
       <footer className="border-t border-line/50 px-6 py-8 sm:px-8 lg:px-10">
         <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
-          <p className="text-sm text-muted">© {new Date().getFullYear()} Nicole Li · Made slowly, by hand, in Chicago.</p>
+          <p className="text-sm text-muted">© {new Date().getFullYear()} Nicole Li · Made by CodeX, Cursor, and me, in Chicago.</p>
           <p className="font-hand text-lg text-coral">thanks for reading ☕</p>
         </div>
       </footer>

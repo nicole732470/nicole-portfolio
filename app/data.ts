@@ -31,9 +31,9 @@ export const focus = [
 ];
 
 export const whyIBuild = [
-  "I spent five years building information and AI products at Tencent.",
-  "The more I worked on systems that process massive amounts of information, the more I noticed a recurring pattern: people rarely suffer from a lack of information. They suffer from too much information and too little clarity.",
-  "Today, I build tools that turn messy information into useful decisions — especially in job search, visa transparency, price tracking, and AI-assisted workflows.",
+  "I try to understand how the world works",
+  "I am interested in people, business and daily life",
+  "Most of my projects start with a frustration, a question, or an unmet need. I enjoy breaking down complex problems and building systems that make life a little easier, more efficient, or more understandable.",
 ];
 
 export const projects = [
@@ -90,4 +90,3 @@ export const socials = [
   ["Douban", "https://www.douban.com/people/149884340/", "Clapperboard"],
 ] as const;
 
-export const quote = "The best products come from deeply understanding real human struggles.";
