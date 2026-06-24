@@ -1,12 +1,15 @@
 "use client";
 
-import { BriefcaseBusiness, Clapperboard, Code2, Compass } from "lucide-react";
+import { BriefcaseBusiness, Clapperboard, Code2, Compass, BookOpen, Globe2, PawPrint } from "lucide-react";
 
 const iconMap = {
   clapperboard: Clapperboard,
   compass: Compass,
   code: Code2,
   briefcase: BriefcaseBusiness,
+  "book-open": BookOpen,
+  "globe-2": Globe2,
+  "paw-print": PawPrint,
 } as const;
 
 type IconKey = keyof typeof iconMap;
