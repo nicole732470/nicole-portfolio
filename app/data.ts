@@ -6,7 +6,7 @@ export const profile = {
   location: "Chicago, IL",
   school: "Northwestern",
   previous: "Former Tencent Product Manager",
-  status: "Open to full-time opportunities",
+  hobby: "World Traveler 🌏",
   email: "nicole732470@gmail.com",
   github: "https://github.com/nicole732470",
   linkedin: "https://www.linkedin.com/in/nicoleyuli/",
@@ -37,9 +37,21 @@ export const whyIBuild = [
 
 export const projects = [
   {
-    title: "JobLens",
+    title: "PriceTracker",
     number: "01",
-    eyebrow: "Career intelligence",
+    eyebrow: "Web Scraping & Automation",
+    description:
+      "Consumer price monitoring platform that tracks prices across retailers and alerts users to price drops.",
+    tech: ["Ruby on Rails", "SendGrid", "Github Actions", "Heroku"],
+    github: "https://github.com/nicole732470/project-smart-shopping-list/tree/main",
+    live: "https://smart-shoppinglist-6ae31171e85c.herokuapp.com/",
+    iconKey: "sparkles" as const,
+    image: "/images/pricetracker-screenshot.png",
+  },
+  {
+    title: "JobLens",
+    number: "02",
+    eyebrow: "AI Decision Systems",
     description:
       "Visa-aware job intelligence platform combining H-1B history, resume matching, job scoring, and a Chrome extension workflow.",
     tech: ["FastAPI", "React", "LangGraph", "AWS", "Chrome MV3"],
@@ -50,27 +62,15 @@ export const projects = [
   },
   {
     title: "JobPush",
-    number: "02",
-    eyebrow: "Opportunity monitoring",
+    number: "03",
+    eyebrow: "Data Pipelines & Monitoring",
     description:
       "Career-site discovery and job monitoring system that tracks official company openings and prioritizes opportunities.",
-    tech: ["Python", "PostgreSQL", "AWS", "Crawl Pipelines"],
+    tech: ["Python", "PostgreSQL", "AWS", "Data Engineering"],
     github: "https://github.com/nicole732470/jobpush",
     live: "",
     iconKey: "plane" as const,
     image: "/images/jobpush-placeholder.svg",
-  },
-  {
-    title: "PriceTracker",
-    number: "03",
-    eyebrow: "Consumer decisions",
-    description:
-      "Consumer price monitoring platform that tracks prices across retailers and alerts users to meaningful price drops.",
-    tech: ["Ruby on Rails", "PostgreSQL", "Background Jobs"],
-    github: "https://github.com/nicole732470/smartshoppinglist",
-    live: "https://smart-shoppinglist-6ae31171e85c.herokuapp.com/",
-    iconKey: "sparkles" as const,
-    image: "/images/pricetracker-screenshot.jpg",
   },
 ];
 
