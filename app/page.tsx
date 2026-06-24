@@ -30,9 +30,8 @@ export default function Home() {
             <p className="mt-4 font-hand text-3xl font-bold text-coral sm:text-4xl">{profile.headline}</p>
             <p className="mt-3 max-w-sm text-sm leading-7 sm:text-[15px]">{profile.subheadline}</p>
             <div className="mt-3 grid gap-1 text-sm">
-              <span>✦ {profile.school} · {profile.location}</span>
-              <span>✦ {profile.previous}</span>
-              <span>✦ {profile.status}</span>
+              <span>✨ {profile.school} · {profile.location}</span>
+              <span>✨ {profile.previous}</span>
             </div>
             <div className="mt-5">
               <a href="#work" className="inline-flex items-center rounded-xl bg-coral px-5 py-2.5 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5">

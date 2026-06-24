@@ -566,6 +566,26 @@ export const places: Place[] = [
     photo: "/images/places/hohhot.jpg",
     country: "China",
   },
+
+  {
+    slug: "dekalb",
+    name: "Dekalb",
+    coords: [88.79, 34.62],
+    dateLabel: "2019",
+    note: "/",
+    photo: "/images/places/dekalb.jpg",
+    country: "United States of America",
+  },
+
+  {
+    slug: "evanston",
+    name: "Evanston",
+    coords: [87.66, 42.05],
+    dateLabel: "2025",
+    note: "another home",
+    photo: "/images/places/evanston.jpg",
+    country: "United States of America",
+  },
 ];
 
 export const featuredPlaces = places.filter((p) => p.featured);

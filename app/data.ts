@@ -75,19 +75,12 @@ export const projects = [
 ];
 
 export const numbers = [
-  ["700+", "Movies watched", "clapperboard"],
-  ["30+", "Places visited", "compass"],
-  ["3", "Products shipped", "code"],
-  ["5+", "Years in tech", "briefcase"],
+  ["750+", "Movies watched", "clapperboard"],
+  ["500+", "Reading hours", "book-open"],
+  ["10+", "Countries visited", "globe-2"],
+  ["1", "Cat", "paw-print"],
 ] as const;
 
-export const obsessions = [
-  "Agent workflows",
-  "Labor market data",
-  "Information retrieval",
-  "Product systems",
-  "Good design",
-];
 
 export const socials = [
   ["GitHub", "https://github.com/nicole732470", "Github"],
