@@ -24,9 +24,9 @@ export const nav = [
 ] as const;
 
 export const focus = [
-  { title: "Career Intelligence", text: "Turning messy job market data into useful insight.", iconKey: "briefcase" as const },
-  { title: "AI & Systems", text: "Exploring how AI can augment human decision-making.", iconKey: "sparkles" as const },
-  { title: "Information Design", text: "Building products that bring clarity, not more noise.", iconKey: "filter" as const },
+  { title: "System Thinking", text: "Approaching problems through end-to-end systems.", iconKey: "briefcase" as const },
+  { title: "Data Intelligence", text: "Using data, evaluation, and evidence to find structure in chaos.", iconKey: "sparkles" as const },
+  { title: "Engineering Driven", text: "Building products with simple, maintainable solutions.", iconKey: "filter" as const },
 ];
 
 export const whyIBuild = [

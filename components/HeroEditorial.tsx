@@ -13,15 +13,6 @@ export function HeroEditorial() {
           sizes="(max-width: 1024px) 100vw, 55vw"
         />
       </div>
-
-      <div
-        className="pointer-events-none absolute left-0 top-[2%] z-10 hidden rotate-[-5deg] rounded-sm border border-line/70 bg-[#fff8dc]/95 px-3 py-2 font-hand text-base leading-snug text-navy shadow-sm sm:block"
-        aria-hidden
-      >
-        Clarity &gt; Information
-        <br />
-        &gt; Better Decisions
-      </div>
     </div>
   );
 }

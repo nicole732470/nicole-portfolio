@@ -19,7 +19,7 @@ export function FocusNotes({
   return (
     <div className="flex h-full flex-col justify-center gap-4 py-2">
       <div className="paper-tape relative rotate-[-2deg] self-start rounded-sm border border-line/80 bg-[#fff1d8] px-4 py-2 shadow-sm">
-        <h2 className="font-hand text-2xl font-bold text-navy">What I&apos;m focused on</h2>
+        <h2 className="font-hand text-2xl font-bold text-navy">How I work</h2>
       </div>
 
       <div className="space-y-4">
