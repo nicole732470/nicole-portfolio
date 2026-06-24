@@ -31,7 +31,6 @@ export function ClarityScene() {
       </svg>
 
       <div className="absolute bottom-6 left-6 right-6">
-        <p className="font-serif text-xl font-bold text-navy">Information → Clarity → Decisions</p>
         <p className="mt-1 text-sm text-muted">Filtering noise into something a person can actually act on.</p>
       </div>
 

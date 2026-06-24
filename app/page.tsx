@@ -60,9 +60,6 @@ export default function Home() {
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
-            <div className="paper-tape relative mt-6 inline-block rotate-[-1deg] rounded-sm border border-line bg-[#fff1d8] px-5 py-3 shadow-sm">
-              <p className="font-hand text-xl text-navy">Information → Clarity → Decisions</p>
-            </div>
           </div>
           <aside className="flex items-center justify-center border-t border-line p-8 lg:border-l lg:border-t-0">
             <div className="paper-tape relative rotate-[-3deg] rounded-sm border border-line bg-[#fff1d8] p-8 shadow-card">
