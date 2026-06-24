@@ -1,8 +1,7 @@
-/** Movie watch activity for heatmap */
-export type WatchDay = { date: string; count: number };
+export type ActivityDay = { date: string; count: number };
 
-/** Hand-picked days — add Douban export rows here (YYYY-MM-DD, count) */
-export const watchActivity: WatchDay[] = [
+/** Movie watch activity for heatmap */
+export const watchActivity: ActivityDay[] = [
   { date: "2024-10-27", count: 2 },
   { date: "2024-11-10", count: 2 },
   { date: "2024-12-15", count: 3 },
@@ -11,8 +10,27 @@ export const watchActivity: WatchDay[] = [
   { date: "2025-05-03", count: 3 },
 ];
 
+/** Reading activity for heatmap */
+export const readingActivity: ActivityDay[] = [
+  { date: "2025-01-05", count: 1 },
+  { date: "2025-01-12", count: 2 },
+  { date: "2025-02-01", count: 1 },
+  { date: "2025-02-15", count: 2 },
+  { date: "2025-03-03", count: 2 },
+  { date: "2025-04-12", count: 3 },
+  { date: "2025-05-25", count: 2 },
+  { date: "2025-06-08", count: 1 },
+  { date: "2025-07-20", count: 2 },
+  { date: "2025-09-13", count: 1 },
+  { date: "2025-10-18", count: 2 },
+  { date: "2025-11-09", count: 1 },
+  { date: "2026-01-20", count: 2 },
+  { date: "2026-03-02", count: 3 },
+  { date: "2026-05-06", count: 2 },
+];
+
 /** Plausible filler until Douban CSV is wired in — weekend-heavy pattern */
-function syntheticActivity(weeks: number): WatchDay[] {
+function syntheticActivity(weeks: number): ActivityDay[] {
   const end = new Date("2026-06-23");
   const start = new Date(end);
   start.setDate(start.getDate() - weeks * 7);
@@ -34,9 +52,9 @@ function syntheticActivity(weeks: number): WatchDay[] {
   return days;
 }
 
-export function activityMap(weeks = 28) {
+export function activityMap(activity: ActivityDay[], weeks = 28) {
   const merged = new Map<string, number>();
-  for (const day of [...syntheticActivity(weeks), ...watchActivity]) {
+  for (const day of [...syntheticActivity(weeks), ...activity]) {
     merged.set(day.date, Math.max(merged.get(day.date) ?? 0, day.count));
   }
   return merged;
@@ -44,8 +62,8 @@ export function activityMap(weeks = 28) {
 
 export type HeatmapCell = { date: string; count: number };
 
-export function buildHeatmapGrid(weeks = 28) {
-  const counts = activityMap(weeks);
+export function buildActivityHeatmapGrid(activity: ActivityDay[], weeks = 28) {
+  const counts = activityMap(activity, weeks);
   const end = new Date("2026-06-23");
   const start = new Date(end);
   start.setDate(start.getDate() - weeks * 7 + 1);
@@ -74,4 +92,8 @@ export function buildHeatmapGrid(weeks = 28) {
   }
 
   return { grid, cols, monthLabels };
+}
+
+export function buildHeatmapGrid(weeks = 28) {
+  return buildActivityHeatmapGrid(watchActivity, weeks);
 }

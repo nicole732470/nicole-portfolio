@@ -7,6 +7,7 @@ import { MovieHeatmap } from "@/components/MovieHeatmap";
 import { MovieShelf } from "@/components/MovieShelf";
 import { PlaygroundNumbers } from "@/components/PlaygroundNumbers";
 import { ProjectCard } from "@/components/ProjectCard";
+import { ReadingHeatmap } from "@/components/ReadingHeatmap";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Sidebar } from "@/components/Sidebar";
 import { ThinkingNotes } from "@/components/ThinkingNotes";
@@ -119,6 +120,7 @@ export default function Home() {
                 <MovieShelf />
               </div>
               <MovieHeatmap />
+              <ReadingHeatmap />
               <div className="mt-5 border-t border-line/60 pt-5">
                 <h3 className="font-hand text-xl font-bold text-navy">By the Numbers</h3>
                 <PlaygroundNumbers items={numbers} />
