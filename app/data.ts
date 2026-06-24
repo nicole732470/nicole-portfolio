@@ -1,12 +1,13 @@
 export const profile = {
   name: "Nicole Li",
-  headline: "Builder × Product Thinker",
+  headline: "Curiosity-driven",
   subheadline:
-    "I build tools that help people make better decisions — from job search intelligence to consumer price tracking.",
+    "We live in an age of chaos. I build products to navigate the complexity, uncertainty, and noise of information overload, so people can make better decisions.",
   location: "Chicago, IL",
-  school: "Northwestern",
-  previous: "Former Tencent Product Manager",
+  school: "Northwestern University, M.S. in Information Systems",
   hobby: "World Traveler 🌏",
+  previous: "Former Tencent Product Manager",
+  now: "Product Engineer",
   email: "nicole732470@gmail.com",
   github: "https://github.com/nicole732470",
   linkedin: "https://www.linkedin.com/in/nicoleyuli/",
