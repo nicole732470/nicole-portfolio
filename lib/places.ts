@@ -21,15 +21,7 @@ export function placePhotoSrc(place: Place) {
 
 /** Primary cities for auto-play — order controls carousel sequence */
 export const places: Place[] = [
-  {
-    slug: "inner-mongolia",
-    name: "Inner Mongolia",
-    coords: [111.75, 40.84],
-    note: "Where the story started — grasslands, distance, and curiosity.",
-    photo: "/images/places/inner-mongolia.jpg",
-    country: "China",
-    featured: true,
-  },
+
   {
     slug: "los-angeles",
     name: "Los Angeles",
