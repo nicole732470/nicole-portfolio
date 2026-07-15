@@ -8,6 +8,7 @@ import { MovieShelf } from "@/components/MovieShelf";
 import { PlaygroundNumbers } from "@/components/PlaygroundNumbers";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ReadingHeatmap } from "@/components/ReadingHeatmap";
+import { ResumeButton } from "@/components/ResumeButton";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Sidebar } from "@/components/Sidebar";
 import { ThinkingNotes } from "@/components/ThinkingNotes";
@@ -36,10 +37,11 @@ export default function Home() {
               <span>✨ {profile.hobby}</span>
               <span>✨ {profile.now}</span>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 flex flex-wrap items-center gap-3">
               <a href="#work" className="inline-flex items-center rounded-xl bg-coral px-5 py-2.5 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5">
                 View my work
               </a>
+              <ResumeButton />
             </div>
           </section>
 
